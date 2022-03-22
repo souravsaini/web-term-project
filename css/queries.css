@@ -1,42 +1,57 @@
 /* rem won't work in media queries. Instead use pixels or em (1em = 16px) */
 
-@media screen and (min-width: 768px) {
-    body {
-        width: 90%;
-    }
-    .grid {
-        column-gap: 2.4rem;
-        row-gap: 6.6rem;
-    }
-    .grid--2-cols {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    /* .grid--3-cols {
-    grid-template-columns: repeat(3, 1fr);
+@media only screen and (min-width: 576px) {
+  .pt-4 {
+    padding-top: 10rem;
   }
+}
 
-  .grid--4-cols {
-    grid-template-columns: repeat(4, 1fr);
-  } */
+@media screen and (min-width: 768px) {
+  body {
+    width: 90%;
+  }
+  .grid {
+    column-gap: 2.4rem;
+    row-gap: 6.6rem;
+  }
+  .grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* CAROUSEL */
+  .desktop {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+  /* END OF CAROUSEL */
 }
 
 @media screen and (min-width: 992px) {
-    body {
-        width: 85%;
-    }
-    .grid {
-        row-gap: 9.6rem;
-    }
-    .grid--2-cols {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  body {
+    width: 85%;
+  }
+  .grid {
+    row-gap: 9.6rem;
+  }
+  .grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .pt-4 {
+    padding-top: 15rem;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    body {
-        width: 80%;
-    }
-    .grid--2-cols {
-        grid-template-columns: repeat(4, 1fr);
-    }
+  body {
+    width: 80%;
+  }
+
+  .grid--2-cols {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .testimonials {
+    background-size: cover;
+  }
 }

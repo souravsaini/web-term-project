@@ -5,8 +5,14 @@
 }
 
 :root {
-  --main-color: #e67a77;
+  --main-color: #00ade5;
+
+  --background-color-1: #000000d4;
+  --background-color-2: #bbb;
+
   --grey-dark: #333;
+  --grey-light: #f2f2f2;
+  --white: #fff;
 }
 
 html {
