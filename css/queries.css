@@ -1,19 +1,17 @@
 /* rem won't work in media queries. Instead use pixels or em (1em = 16px) */
+
 @media screen and (min-width: 768px) {
-  body {
-    width: 90%;
-  }
-
-  .grid {
-    column-gap: 2.4rem;
-    row-gap: 6.6rem;
-  }
-
-  .grid--2-cols {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  /* .grid--3-cols {
+    body {
+        width: 90%;
+    }
+    .grid {
+        column-gap: 2.4rem;
+        row-gap: 6.6rem;
+    }
+    .grid--2-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* .grid--3-cols {
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -23,25 +21,22 @@
 }
 
 @media screen and (min-width: 992px) {
-  body {
-    width: 85%;
-  }
-
-  .grid {
-    row-gap: 9.6rem;
-  }
-
-  .grid--2-cols {
-    grid-template-columns: repeat(3, 1fr);
-  }
+    body {
+        width: 85%;
+    }
+    .grid {
+        row-gap: 9.6rem;
+    }
+    .grid--2-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (min-width: 1200px) {
-  body {
-    width: 80%;
-  }
-
-  .grid--2-cols {
-    grid-template-columns: repeat(4, 1fr);
-  }
+    body {
+        width: 80%;
+    }
+    .grid--2-cols {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
