@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #e67a77;
+  --grey-dark: #333;
+}
+
+html {
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* This is the browser font-size settings. Now 1rem = 10px */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--grey-dark);
+  width: 100%;
+  margin: 0 auto;
+}
