@@ -134,10 +134,10 @@ width: 80%
 }
 
 .h2-color {
-  color: white;
+  color: var(--white);
   font-family: "Rubik", sans-serif;
-  padding-top: 5px;
-  font-size: 17px;
+  padding-top: 3rem;
+  font-size: 2rem;
 }
 
 .servicesExploreMore {
