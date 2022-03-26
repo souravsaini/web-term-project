@@ -12,6 +12,12 @@
   .grid--2-cols {
     grid-template-columns: repeat(2, 1fr);
   }
+  .desktop {
+      display: block;
+    }
+    .mobile {
+      display: none;
+    }
 
   /* .grid--3-cols {
     grid-template-columns: repeat(3, 1fr);
@@ -20,4 +26,33 @@
   .grid--4-cols {
     grid-template-columns: repeat(4, 1fr);
   } */
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    width: 85%;
+  }
+  .grid {
+    row-gap: 9.6rem;
+  }
+  .grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .pt-4 {
+    padding-top: 15rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    width: 80%;
+  }
+
+  .grid--2-cols {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .testimonials {
+    background-size: cover;
+  }
 }
