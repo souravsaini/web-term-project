@@ -32,3 +32,15 @@
 .margin-top--lg {
   margin-top: 7rem;
 }
+
+.center {
+  text-align: center;
+}
+
+.padding-bottom-sm {
+  padding-bottom: 3.2rem;
+}
+
+.padding-top-sm {
+  padding-top: 3.2rem;
+}
