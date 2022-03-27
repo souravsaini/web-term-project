@@ -264,6 +264,8 @@ width: 80%
     list-style: none;
     display: flex;
     gap: 2.4rem;
+	width: 60%;
+	margin: 0 auto;
   }
   
   .social-icon {
