@@ -4,6 +4,16 @@
   .pt-4 {
     padding-top: 10rem;
   }
+  
+    .footer .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.social-links {
+width: auto;
+}
 }
 
 @media screen and (min-width: 768px) {
