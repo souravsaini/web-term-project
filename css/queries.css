@@ -7,7 +7,6 @@
   .pt-4 {
     padding-top: 10rem;
   }
-
   .btn-mobile-nav {
     display: none;
   }
@@ -50,6 +49,16 @@
   .menu-link:link,
   .menu-link:visited {
     font-size: 2rem;
+  }
+
+  .footer .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .social-links {
+    width: auto;
   }
 }
 

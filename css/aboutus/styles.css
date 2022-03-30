@@ -253,11 +253,6 @@
   backface-visibility: hidden;
 }
 
-.quality-card-front {
-  /* background-color: var(--main-color-shade-2); */
-  /* color: var(--white); */
-}
-
 .quality-card-back {
   background-color: var(--main-color-shade-2);
   color: var(--white);

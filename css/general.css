@@ -30,7 +30,7 @@
 }
 
 .grid:not(:last-child) {
-  margin-bottom: 9.6rem;
+  margin-bottom: 5.6rem;
 }
 
 .margin-top--sm {
@@ -206,4 +206,16 @@
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
+}
+
+.center {
+  text-align: center;
+}
+
+.padding-bottom-sm {
+  padding-bottom: 3.2rem;
+}
+
+.padding-top-sm {
+  padding-top: 3.2rem;
 }
