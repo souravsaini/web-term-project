@@ -1,3 +1,211 @@
+.logo {
+  width: 15rem;
+  height: auto;
+}
+
+/*** DROPDOWN LINKS ***/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--main-color-tint-2);
+  min-width: 10rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: var(--grey-dark);
+  padding: 1.5rem 2rem;
+  font-size: 1.6rem;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: var(--white);
+  background-color: var(--main-color);
+}
+
+.dropdown-link:link,
+.dropdown-link:visited {
+  position: relative;
+}
+
+.dropdown-link:hover + .dropdown-content,
+.dropdown-link:active + .dropdown-content {
+  display: block;
+}
+
+.dropdown-content:hover,
+.dropdown-content:active {
+  display: block;
+}
+/*** DROPDOWN LINKS **/
+
+.header {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  background-attachment: fixed;
+}
+
+.nav-header-container {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem;
+
+  background-color: var(--main-color-tint-2);
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.97);
+  position: absolute; /* by default, all elements are relative to the body */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  transform: translateX(0);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in;
+
+  /* 1) Hide it visually */
+  opacity: 0;
+
+  /* 2) Make it unaccessible to mouse and keyboard */
+  pointer-events: none;
+
+  /* 3) Hide it from screen readers */
+  visibility: hidden;
+}
+
+.nav-open .navbar {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.nav-open .icon-mobile-nav[name="close-outline"] {
+  display: block;
+}
+
+.nav-open .icon-mobile-nav[name="menu-outline"] {
+  display: none;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: var(--main-color);
+  font-weight: 700;
+}
+
+.logo span {
+  font-size: 2.8rem;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.menu a {
+  padding: 0.5em;
+}
+
+.menu-link:link,
+.menu-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--main-color-shade-2);
+  font-weight: 500;
+  font-size: 2.8rem;
+  transition: all 0.3s;
+}
+
+.menu-link:hover,
+.menu-link:active {
+  color: var(--white);
+  background-color: var(--main-color);
+}
+
+/* MOBILE VIEW */
+.btn-mobile-nav {
+  display: block;
+  background: transparent;
+  border-color: transparent;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: var(--main-color);
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+.hero {
+  align-items: flex-end;
+  justify-items: center;
+  height: 60vh;
+  text-align: center;
+  padding: 0 0.5rem;
+}
+
+.hero-img {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  border: 2px solid var(--main-color);
+  object-fit: cover;
+}
+
+.hero-text-box {
+  color: var(--main-color-shade-1);
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 90%;
+}
+
+.hero-text1 {
+  font-size: 2rem;
+}
+
+.hero-text2 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.hero-text2 span {
+  color: var(--white);
+  font-weight: 500;
+}
+
 article {
   text-align: center;
   font-size: 1.6rem;

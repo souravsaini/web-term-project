@@ -1,12 +1,62 @@
 /* rem won't work in media queries. Instead use pixels or em (1em = 16px) */
 
 @media only screen and (min-width: 576px) {
+  html {
+    font-size: 70%;
+  }
   .pt-4 {
     padding-top: 10rem;
+  }
+
+  .btn-mobile-nav {
+    display: none;
+  }
+
+  .icon-mobile-nav[name="close-outline"] {
+    display: none;
+  }
+
+  .navbar {
+    background-color: inherit;
+    position: inherit;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    transform: translateX(0);
+
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .menu {
+    flex-direction: row;
+  }
+
+  /* .dropdown-link:hover + .dropdown-content,
+  .dropdown-link:active + .dropdown-content {
+    display: block;
+  } */
+
+  .hero-text-box {
+    width: inherit;
+  }
+
+  .hero-text-box--pages {
+    flex-direction: row;
+  }
+
+  .menu-link:link,
+  .menu-link:visited {
+    font-size: 2rem;
   }
 }
 
 @media screen and (min-width: 768px) {
+  /* html {
+    font-size: 75%;
+  } */
   body {
     width: 90%;
   }
@@ -17,6 +67,10 @@
   .grid--2-cols {
     grid-template-columns: repeat(2, 1fr);
   }
+  /* .nav-header {
+    padding: 2.4rem;
+  } */
+
   /* CAROUSEL */
   .desktop {
     display: block;
@@ -25,9 +79,16 @@
     display: none;
   }
   /* END OF CAROUSEL */
+
+  .nav-header-container {
+    width: 90%;
+  }
 }
 
 @media screen and (min-width: 992px) {
+  html {
+    font-size: 75%;
+  }
   body {
     width: 85%;
   }
@@ -40,15 +101,26 @@
   .pt-4 {
     padding-top: 15rem;
   }
+
+  .nav-header-container {
+    width: 85%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
+  html {
+    font-size: 80%;
+  }
   body {
     width: 80%;
   }
 
   .grid--2-cols {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .nav-header-container {
+    width: 80%;
   }
 
   .testimonials {

@@ -1,32 +1,47 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+const btnNavElement = document.querySelector(".btn-mobile-nav");
+const headerElement = document.querySelector(".header");
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
+btnNavElement.addEventListener("click", function () {
+  headerElement.classList.toggle("nav-open");
+});
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
+//redirect to linked pages
+const externalLinks = document.querySelectorAll(
+  ".menu-link, .logo, .btn, .footer-link"
+);
+externalLinks.forEach((link) => {
+  //close mobile nav
+  if (link.classList.contains("menu-link")) {
+    headerElement.classList.toggle("nav-open");
+  }
+});
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-}
+//smooth scroll
+const links = document.querySelectorAll(".sublink");
+
+links.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    const href = link.getAttribute("href");
+
+    //scroll to top
+    if (href === "#") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+
+    //scroll to section
+    if (href !== "#" && href.startsWith("#")) {
+      const element = document.querySelector(href);
+      console.log(element);
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+
+    //close mobile nav
+    if (link.classList.contains("sublink")) {
+      headerElement.classList.toggle("nav-open");
+    }
+  });
+});

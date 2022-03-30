@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/base.css" />
-    <link rel="stylesheet" href="./css/general.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/queries.css" />
+    <!-- Font family -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
@@ -15,183 +17,265 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Linking External CSS files -->
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+    <!--Typed JS-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Ion Icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
     <title>Document</title>
   </head>
 
   <body>
-    <!-- counter -->
-    <section class="counter_sec">
-      <div class="back_color">
-        <div class="grid grid--2-cols center">
-          <div class="counter-col">
-            <h2>
-              <span class="Count">1500</span>&nbsp;<i
-                class="fa fa-plus"
-                aria-hidden="true"
-              ></i>
-            </h2>
-            <p class="count_p">JOB OPPORTUNITIES</p>
-          </div>
+    <!-- Header-->
+    <header class="header">
+      <div class="nav-header-container">
+        <div class="nav-header">
+          <!-- <a href="#" class="logo"> <span>Lambton</span> Consultancy </a> -->
+          <a href="#">
+            <img src="./images/logo-new.PNG" alt="logo" class="logo" />
+          </a>
 
-          <div class="counter-col">
-            <h2>
-              <span class="Count">20</span>&nbsp;<i
-                class="fa fa-plus"
-                aria-hidden="true"
-              ></i>
-            </h2>
-            <p class="count_p">CLIENTS</p>
-          </div>
+          <!-- Navigation -->
+          <nav class="navbar">
+            <ul class="menu">
+              <li>
+                <a href="./index.html" class="dropdown-link menu-link">Home</a>
+                <div class="dropdown-content">
+                  <a href="#counter" class="sublink">Our Experience</a>
+                  <a href="#testimonials" class="sublink">Testimonials</a>
+                </div>
+              </li>
+              <li>
+                <a href="./aboutus.html" class="menu-link">About us</a>
+              </li>
+            </ul>
+          </nav>
 
-          <div class="counter-col">
-            <h2>
-              <span class="Count">1200</span>&nbsp;<i
-                class="fa fa-plus"
-                aria-hidden="true"
-              ></i>
-            </h2>
-            <p class="count_p">
-              EMPLOYEES<span><br /></span>
-            </p>
-          </div>
+          <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+          </button>
+          <!-- End of navigation -->
+        </div>
+      </div>
 
-          <div class="counter-col">
-            <h2>
-              <span class="Count">20</span>&nbsp;<i
-                class="fa fa-plus"
-                aria-hidden="true"
-              ></i>
-            </h2>
-            <p class="count_p">CONTRACT</p>
+      <!-- Hero -->
+      <div class="hero-box">
+        <div class="hero grid--no-column-gap">
+          <div class="hero-text-box">
+            <div class="hero-text1">Welcome To Lambton Consultancy</div>
+            <div class="hero-text2">We <span class="typed"></span></div>
+            <a
+              href="#programs"
+              class="btn btn--full btn--padding-lg margin-top--sm"
+              >Explore our work</a
+            >
           </div>
         </div>
       </div>
-    </section>
-    <!-- counter -->
-    <!-- testimonials -->
-    <section class="testimonials desktop">
-      <div class="grid grid--2-cols pt-4">
-        <div class="card center margin-top--xl">
-          <img class="testi_images" src="./images/vector_01.jpg" alt="" />
-          <p class="testi--text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis in, qui ratione ducimus voluptate veniam eaque itaque
-            dolorum placeat assumenda inventore architecto quos beatae aliquam
-            deleniti totam illum nulla ipsam.Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Perspiciatis in, qui ratione ducimus
-            voluptate veniam eaque itaque dolorum placeat assumenda inventore
-            architecto quos beatae aliquam deleniti totam illum nulla ipsam.
-          </p>
+
+      <!-- End of Hero -->
+    </header>
+    <!-- End of Header -->
+    <main>
+      <!-- counter -->
+      <section class="counter_sec" id="counter">
+        <div class="back_color">
+          <div class="grid grid--2-cols center">
+            <div class="counter-col">
+              <h2>
+                <span class="Count">1500</span>&nbsp;<i
+                  class="fa fa-plus"
+                  aria-hidden="true"
+                ></i>
+              </h2>
+              <p class="count_p">JOB OPPORTUNITIES</p>
+            </div>
+
+            <div class="counter-col">
+              <h2>
+                <span class="Count">20</span>&nbsp;<i
+                  class="fa fa-plus"
+                  aria-hidden="true"
+                ></i>
+              </h2>
+              <p class="count_p">CLIENTS</p>
+            </div>
+
+            <div class="counter-col">
+              <h2>
+                <span class="Count">1200</span>&nbsp;<i
+                  class="fa fa-plus"
+                  aria-hidden="true"
+                ></i>
+              </h2>
+              <p class="count_p">
+                EMPLOYEES<span><br /></span>
+              </p>
+            </div>
+
+            <div class="counter-col">
+              <h2>
+                <span class="Count">20</span>&nbsp;<i
+                  class="fa fa-plus"
+                  aria-hidden="true"
+                ></i>
+              </h2>
+              <p class="count_p">CONTRACT</p>
+            </div>
+          </div>
         </div>
-        <div class="card center margin-top--xl">
-          <img class="testi_images" src="./images/vector_02.jpg" alt="" />
-          <p class="testi--text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis in, qui ratione ducimus voluptate veniam eaque itaque
-            dolorum placeat assumenda inventore architecto quos beatae aliquam
-            deleniti totam illum nulla ipsam.Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Perspiciatis in, qui ratione ducimus
-            voluptate veniam eaque itaque dolorum placeat assumenda inventore
-            architecto quos beatae aliquam deleniti totam illum nulla ipsam.
-          </p>
-        </div>
-        <div class="card center margin-top--xl">
-          <img class="testi_images" src="./images/vector_03.jpg" alt="" />
-          <p class="testi--text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis in, qui ratione ducimus voluptate veniam eaque itaque
-            dolorum placeat assumenda inventore architecto quos beatae aliquam
-            deleniti totam illum nulla ipsam.Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Perspiciatis in, qui ratione ducimus
-            voluptate veniam eaque itaque dolorum placeat assumenda inventore
-            architecto quos beatae aliquam deleniti totam illum nulla ipsam.
-          </p>
-        </div>
-        <div class="card center margin-top--xl">
-          <img class="testi_images" src="./images/vector_04.jpg" alt="" />
-          <p class="testi--text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis in, qui ratione ducimus voluptate veniam eaque itaque
-            dolorum placeat assumenda inventore architecto quos beatae aliquam
-            deleniti totam illum nulla ipsam.Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Perspiciatis in, qui ratione ducimus
-            voluptate veniam eaque itaque dolorum placeat assumenda inventore
-            architecto quos beatae aliquam deleniti totam illum nulla ipsam.
-          </p>
-        </div>
+      </section>
+      <!-- counter -->
+      <!-- testimonials -->
+      <div id="testimonials">
+        <section class="testimonials desktop">
+          <div class="grid grid--2-cols pt-4">
+            <div class="card center margin-top--xl">
+              <img class="testi_images" src="./images/vector_01.jpg" alt="" />
+              <p class="testi--text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis in, qui ratione ducimus voluptate veniam eaque
+                itaque dolorum placeat assumenda inventore architecto quos
+                beatae aliquam deleniti totam illum nulla ipsam.Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Perspiciatis in,
+                qui ratione ducimus voluptate veniam eaque itaque dolorum
+                placeat assumenda inventore architecto quos beatae aliquam
+                deleniti totam illum nulla ipsam.
+              </p>
+            </div>
+            <div class="card center margin-top--xl">
+              <img class="testi_images" src="./images/vector_02.jpg" alt="" />
+              <p class="testi--text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis in, qui ratione ducimus voluptate veniam eaque
+                itaque dolorum placeat assumenda inventore architecto quos
+                beatae aliquam deleniti totam illum nulla ipsam.Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Perspiciatis in,
+                qui ratione ducimus voluptate veniam eaque itaque dolorum
+                placeat assumenda inventore architecto quos beatae aliquam
+                deleniti totam illum nulla ipsam.
+              </p>
+            </div>
+            <div class="card center margin-top--xl">
+              <img class="testi_images" src="./images/vector_03.jpg" alt="" />
+              <p class="testi--text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis in, qui ratione ducimus voluptate veniam eaque
+                itaque dolorum placeat assumenda inventore architecto quos
+                beatae aliquam deleniti totam illum nulla ipsam.Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Perspiciatis in,
+                qui ratione ducimus voluptate veniam eaque itaque dolorum
+                placeat assumenda inventore architecto quos beatae aliquam
+                deleniti totam illum nulla ipsam.
+              </p>
+            </div>
+            <div class="card center margin-top--xl">
+              <img class="testi_images" src="./images/vector_04.jpg" alt="" />
+              <p class="testi--text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis in, qui ratione ducimus voluptate veniam eaque
+                itaque dolorum placeat assumenda inventore architecto quos
+                beatae aliquam deleniti totam illum nulla ipsam.Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Perspiciatis in,
+                qui ratione ducimus voluptate veniam eaque itaque dolorum
+                placeat assumenda inventore architecto quos beatae aliquam
+                deleniti totam illum nulla ipsam.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- testimonials -->
+        <!-- testimonials--mobile -->
+        <section class="testimonials mobile">
+          <div class="grid--sm slideshow-container pt-4">
+            <!-- Full-width images with number and caption text -->
+            <div class="card mySlides margin-top--sm center fade">
+              <img class="testi_images" src="./images/vector_04.jpg" alt="" />
+              <p class="testi--text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis in, qui ratione ducimus voluptate veniam eaque
+                itaque dolorum placeat assumenda inventore architecto quos
+                beatae aliquam deleniti totam illum nulla ipsam.Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Perspiciatis in,
+                qui ratione ducimus voluptate veniam eaque itaque dolorum
+                placeat assumenda inventore architecto quos beatae aliquam
+                deleniti totam illum nulla ipsam.
+              </p>
+            </div>
+
+            <div class="card mySlides margin-top--sm center fade">
+              <img class="testi_images" src="./images/vector_03.jpg" alt="" />
+              <p class="testi--text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis in, qui ratione ducimus voluptate veniam eaque
+                itaque dolorum placeat assumenda inventore architecto quos
+                beatae aliquam deleniti totam illum nulla ipsam.Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Perspiciatis in,
+                qui ratione ducimus voluptate veniam eaque itaque dolorum
+                placeat assumenda inventore architecto quos beatae aliquam
+                deleniti totam illum nulla ipsam.
+              </p>
+            </div>
+
+            <div class="card mySlides margin-top--sm center fade">
+              <img class="testi_images" src="./images/vector_02.jpg" alt="" />
+              <p class="testi--text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis in, qui ratione ducimus voluptate veniam eaque
+                itaque dolorum placeat assumenda inventore architecto quos
+                beatae aliquam deleniti totam illum nulla ipsam.Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Perspiciatis in,
+                qui ratione ducimus voluptate veniam eaque itaque dolorum
+                placeat assumenda inventore architecto quos beatae aliquam
+                deleniti totam illum nulla ipsam.
+              </p>
+            </div>
+            <div class="card mySlides margin-top--sm center fade">
+              <img class="testi_images" src="./images/vector_01.jpg" alt="" />
+              <p class="testi--text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis in, qui ratione ducimus voluptate veniam eaque
+                itaque dolorum placeat assumenda inventore architecto quos
+                beatae aliquam deleniti totam illum nulla ipsam.Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Perspiciatis in,
+                qui ratione ducimus voluptate veniam eaque itaque dolorum
+                placeat assumenda inventore architecto quos beatae aliquam
+                deleniti totam illum nulla ipsam.
+              </p>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br />
+
+          <!-- The dots/circles -->
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div>
+        </section>
       </div>
-    </section>
-    <!-- testimonials -->
-    <!-- testimonials--mobile -->
-    <section class="testimonials mobile">
-      <div class="grid--sm slideshow-container pt-4">
-        <!-- Full-width images with number and caption text -->
-        <div class="card mySlides margin-top--sm center fade">
-          <img class="testi_images" src="./images/vector_04.jpg" alt="" />
-          <p class="testi--text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis in, qui ratione ducimus voluptate veniam eaque itaque
-            dolorum placeat assumenda inventore architecto quos beatae aliquam
-            deleniti totam illum nulla ipsam.Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Perspiciatis in, qui ratione ducimus
-            voluptate veniam eaque itaque dolorum placeat assumenda inventore
-            architecto quos beatae aliquam deleniti totam illum nulla ipsam.
-          </p>
-        </div>
-
-        <div class="card mySlides margin-top--sm center fade">
-          <img class="testi_images" src="./images/vector_03.jpg" alt="" />
-          <p class="testi--text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis in, qui ratione ducimus voluptate veniam eaque itaque
-            dolorum placeat assumenda inventore architecto quos beatae aliquam
-            deleniti totam illum nulla ipsam.Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Perspiciatis in, qui ratione ducimus
-            voluptate veniam eaque itaque dolorum placeat assumenda inventore
-            architecto quos beatae aliquam deleniti totam illum nulla ipsam.
-          </p>
-        </div>
-
-        <div class="card mySlides margin-top--sm center fade">
-          <img class="testi_images" src="./images/vector_02.jpg" alt="" />
-          <p class="testi--text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis in, qui ratione ducimus voluptate veniam eaque itaque
-            dolorum placeat assumenda inventore architecto quos beatae aliquam
-            deleniti totam illum nulla ipsam.Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Perspiciatis in, qui ratione ducimus
-            voluptate veniam eaque itaque dolorum placeat assumenda inventore
-            architecto quos beatae aliquam deleniti totam illum nulla ipsam.
-          </p>
-        </div>
-        <div class="card mySlides margin-top--sm center fade">
-          <img class="testi_images" src="./images/vector_01.jpg" alt="" />
-          <p class="testi--text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis in, qui ratione ducimus voluptate veniam eaque itaque
-            dolorum placeat assumenda inventore architecto quos beatae aliquam
-            deleniti totam illum nulla ipsam.Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Perspiciatis in, qui ratione ducimus
-            voluptate veniam eaque itaque dolorum placeat assumenda inventore
-            architecto quos beatae aliquam deleniti totam illum nulla ipsam.
-          </p>
-        </div>
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
-      <br />
-
-      <!-- The dots/circles -->
-      <div style="text-align: center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-      </div>
-    </section>
-    <!-- testimonials--mobile -->
+      <!-- testimonials--mobile -->
+    </main>
   </body>
   <script src="./js/scripts.js"></script>
+  <script src="./js/typed.js"></script>
+  <script src="./js/carousel.js"></script>
 </html>
