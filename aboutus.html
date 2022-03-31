@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font family -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="./imageS/logo-sm.png" />
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Linking External CSS files -->
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/aboutus/styles.css" />
+
+    <link rel="stylesheet" href="./css/queries.css" />
+    <link rel="stylesheet" href="./css/aboutus/queries.css" />
+
+    <!--Typed JS-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Ion Icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <title>Lambton Consultancy</title>
+  </head>
+
+  <body>
+    <!-- Header-->
+    <header class="header header-aboutus">
+      <div class="nav-header-container">
+        <div class="nav-header">
+          <!-- <a href="#" class="logo"> <span>Lambton</span> Consultancy </a> -->
+          <a href="#">
+            <img src="./images/logo-new.PNG" alt="logo" class="logo" />
+          </a>
+
+          <!-- Navigation -->
+          <nav class="navbar">
+            <ul class="menu">
+              <li>
+                <a href="./index.html" class="menu-link">Home</a>
+              </li>
+
+              <li>
+                <a href="./aboutus.html" class="dropdown-link menu-link"
+                  >About us</a
+                >
+                <div class="dropdown-content">
+                  <a href="#team" class="sublink">Our Team</a>
+                  <a href="#choose" class="sublink">Choose Us</a>
+                  <a href="#quality" class="sublink">Qualities</a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+
+          <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+          </button>
+          <!-- End of navigation -->
+        </div>
+      </div>
+
+      <!-- Hero -->
+      <div class="hero-box">
+        <div class="hero grid--no-column-gap">
+          <div class="hero-text-box hero-text-box--pages">
+            <div class="hero-text2">Home -></div>
+            <div class="hero-text2">
+              <span>About Us</span>
+            </div>
+            <!-- <div class="hero-text2">We <span class="typed"></span></div> -->
+            <!-- <a
+              href="#programs"
+              class="btn btn--full btn--padding-lg margin-top--sm"
+              >Explore our work</a
+            > -->
+          </div>
+        </div>
+      </div>
+      <!-- End of Hero -->
+    </header>
+    <!-- End of Header -->
+
+    <main>
+      <!-- why choose us section -->
+      <section class="section-choose-us" id="choose">
+        <div class="container">
+          <h3 class="title">Why Choose Us</h3>
+        </div>
+
+        <div
+          class="container grid grid--2-cols grid--2-cols-1200 grid--align-center margin-top--lg"
+        >
+          <div class="choose-us-container">
+            <img
+              src="./images/choose-us.png"
+              alt="choose-us-image"
+              class="choose-us-img"
+            />
+          </div>
+          <div class="choose-us-container">
+            <div class="choose-us-header">
+              <h3 class="choose-us-text">Some of Reasons for choose</h3>
+              <h3 class="choose-us-text">Our <span>IT Solutions</span></h3>
+              <p>
+                We provide services in all over country and has talented team to
+                design, build, deliver, maintain and support projects.
+              </p>
+            </div>
+            <div class="choose-us-content">
+              <article class="single-content">
+                <div class="single-content-icon">
+                  <i class="fa-solid fa-paintbrush"></i>
+                </div>
+                <div class="single-content-inner">
+                  <h5 class="single-content-inner-title">Product Designs</h5>
+                  <p>
+                    We are one of the best teams in the market to provide great
+                    product designs
+                  </p>
+                </div>
+              </article>
+              <article class="single-content">
+                <div class="single-content-icon">
+                  <i class="fa-solid fa-database"></i>
+                </div>
+                <div class="single-content-inner">
+                  <h5 class="single-content-inner-title">
+                    Big Data & Analytics
+                  </h5>
+                  <p>
+                    We bring out useful information to our customers from even
+                    dull datasets
+                  </p>
+                </div>
+              </article>
+              <article class="single-content">
+                <div class="single-content-icon">
+                  <i class="fa-solid fa-headset"></i>
+                </div>
+                <div class="single-content-inner">
+                  <h5 class="single-content-inner-title">Maintain & Support</h5>
+                  <p>
+                    Our clients are extremely satisfied with our product support
+                    and always ready to help.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of why choose us section -->
+
+      <!-- Qualities section -->
+      <section class="section-qualities" id="quality">
+        <div class="container grid grid--2-cols grid--justify-center">
+          <article class="quality-card">
+            <div class="quality-card-inner">
+              <div class="quality-card-front">
+                <div class="quality-icon">
+                  <i class="fa-solid fa-medal"></i>
+                </div>
+                <h3 class="quality-title">Reliability</h3>
+              </div>
+              <div class="quality-card-back">
+                <h3 class="quality-title">Reliability</h3>
+                <p class="quality-description">
+                  We provide accurate, reliable and ethical services with our
+                  expert staff. We apply the fastest and most reliable methods
+                  for your brand.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="quality-card">
+            <div class="quality-card-inner">
+              <div class="quality-card-front">
+                <div class="quality-icon">
+                  <i class="fa-solid fa-certificate"></i>
+                </div>
+                <h3 class="quality-title">Loyalty</h3>
+              </div>
+              <div class="quality-card-back">
+                <h3 class="quality-title">Loyalty</h3>
+                <p class="quality-description">
+                  Our long-term work continues until the job is finished. We
+                  establish solid and long-term relationships with all the
+                  companies we work with.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="quality-card">
+            <div class="quality-card-inner">
+              <div class="quality-card-front">
+                <div class="quality-icon">
+                  <i class="fa-solid fa-thumbs-up"></i>
+                </div>
+                <h3 class="quality-title">Experience</h3>
+              </div>
+              <div class="quality-card-back">
+                <h3 class="quality-title">Experience</h3>
+                <p class="quality-description">
+                  Thanks to the experience we have gained over the years, the
+                  specialist provides service with the latest technology
+                  devices.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="quality-card">
+            <div class="quality-card-inner">
+              <div class="quality-card-front">
+                <div class="quality-icon">
+                  <i class="fa-solid fa-handshake"></i>
+                </div>
+                <h3 class="quality-title">Support</h3>
+              </div>
+              <div class="quality-card-back">
+                <h3 class="quality-title">Support</h3>
+                <p class="quality-description">
+                  We accelerate your business processes by providing
+                  professional support. We solve your problems and provide
+                  instant solutions.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- End of Qualities section -->
+      <!-- teams section -->
+      <section class="section-teams" id="team">
+        <div class="container">
+          <h3 class="title">Our Team</h3>
+        </div>
+
+        <div class="container grid grid--2-cols margin-top--lg">
+          <article class="team">
+            <!-- container of team-img to apply image zoom effect on hover -->
+            <div class="team-img-container">
+              <div class="team-img team-img-1"></div>
+            </div>
+
+            <div class="team-description">
+              <h2 class="team-name">John Watson</h2>
+              <p class="team-title">CEO & Founder</p>
+              <p class="team-edu">Oxford university</p>
+              <ul class="team-social-links">
+                <li>
+                  <a class="social-link" href="#">
+                    <ion-icon
+                      class="team-social-icon"
+                      name="logo-facebook"
+                    ></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a class="social-link" href="#">
+                    <ion-icon
+                      class="team-social-icon"
+                      name="logo-linkedin"
+                    ></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a class="social-link" href="#">
+                    <ion-icon
+                      class="team-social-icon"
+                      name="logo-twitter"
+                    ></ion-icon>
+                  </a>
+                </li>
+              </ul>
+              <a href="#" class="btn btn--sm btn--full btn--padding-sm"
+                >Contact</a
+              >
+            </div>
+          </article>
+
+          <article class="team">
+            <!-- container of team-img to apply image zoom effect on hover -->
+            <div class="team-img-container">
+              <div class="team-img team-img-2"></div>
+            </div>
+
+            <div class="team-description">
+              <h2 class="team-name">Sean Jones</h2>
+              <p class="team-title">Co-Founder</p>
+              <p class="team-edu">Oxford university</p>
+              <ul class="team-social-links">
+                <li>
+                  <a class="social-link" href="#">
+                    <ion-icon
+                      class="team-social-icon"
+                      name="logo-facebook"
+                    ></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a class="social-link" href="#">
+                    <ion-icon
+                      class="team-social-icon"
+                      name="logo-linkedin"
+                    ></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a class="social-link" href="#">
+                    <ion-icon
+                      class="team-social-icon"
+                      name="logo-twitter"
+                    ></ion-icon>
+                  </a>
+                </li>
+              </ul>
+              <a href="#" class="btn btn--sm btn--full btn--padding-sm"
+                >Contact</a
+              >
+            </div>
+          </article>
+
+          <article class="team">
+            <!-- container of team-img to apply image zoom effect on hover -->
+            <div class="team-img-container">
+              <div class="team-img team-img-3"></div>
+            </div>
+
+            <div class="team-description">
+              <h2 class="team-name">Bharat Juneja</h2>
+              <p class="team-title">CTO</p>
+              <p class="team-edu">Harvard university</p>
+              <ul class="team-social-links">
+                <li>
+                  <a class="social-link" href="#">
+                    <ion-icon
+                      class="team-social-icon"
+                      name="logo-facebook"
+                    ></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a class="social-link" href="#">
+                    <ion-icon
+                      class="team-social-icon"
+                      name="logo-linkedin"
+                    ></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a class="social-link" href="#">
+                    <ion-icon
+                      class="team-social-icon"
+                      name="logo-twitter"
+                    ></ion-icon>
+                  </a>
+                </li>
+              </ul>
+              <a href="#" class="btn btn--sm btn--full btn--padding-sm"
+                >Contact</a
+              >
+            </div>
+          </article>
+
+          <article class="team">
+            <!-- container of team-img to apply image zoom effect on hover -->
+            <div class="team-img-container">
+              <div class="team-img team-img-4"></div>
+            </div>
+
+            <div class="team-description">
+              <h2 class="team-name">Maria Jones</h2>
+              <p class="team-title">CMO</p>
+              <p class="team-edu">Toronto university</p>
+              <ul class="team-social-links">
+                <li>
+                  <a class="social-link" href="#">
+                    <ion-icon
+                      class="team-social-icon"
+                      name="logo-facebook"
+                    ></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a class="social-link" href="#">
+                    <ion-icon
+                      class="team-social-icon"
+                      name="logo-linkedin"
+                    ></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a class="social-link" href="#">
+                    <ion-icon
+                      class="team-social-icon"
+                      name="logo-twitter"
+                    ></ion-icon>
+                  </a>
+                </li>
+              </ul>
+              <a href="#" class="btn btn--sm btn--full btn--padding-sm"
+                >Contact</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- End of teams section -->
+    </main>
+    <!--	Footer section	-->
+    <footer class="footer">
+      <div class="grid--2-cols content">
+        <div>
+          <h6>IT Services</h6>
+          <ul>
+            <li><a href="#">Website</a></li>
+            <li><a href="#">Mobile App</a></li>
+            <li><a href="#">Database</a></li>
+            <li><a href="#">Web Service</a></li>
+          </ul>
+        </div>
+        <div class="centre-box">
+          <h6>Let's connect</h6>
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#">
+                <ion-icon class="social-icon" name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">
+                <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">
+                <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h6>Newsletter</h6>
+          <p>Subscribe to stay updated</p>
+          <input
+            class="form-control"
+            name="EMAIL"
+            placeholder="Enter Email "
+            onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'Enter Email '"
+            required=""
+            type="email"
+          />
+          <button class="button"><span class="arrow right"></span></button>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./js/scripts.js"></script>
+</html>

@@ -6,16 +6,23 @@
 
 :root {
   --main-color: #00ade5;
-  --secondary-color: #0799DC;
+
+  --main-color-shade-1: #009cce;
+  --main-color-shade-2: #008ab7;
+
+  --main-color-tint-1: #e6f7fc;
+  --main-color-tint-2: #cceffa;
+  --secondary-color: #0799dc;
 
   --background-color-1: #000000d4;
   --background-color-2: #bbb;
 
-  --text-color-dark: #01579B;
+  --text-color-dark: #01579b;
 
   --grey-dark: #333;
   --grey-light: #f2f2f2;
   --white: #fff;
+  --black: #000;
 }
 
 html {
@@ -32,6 +39,6 @@ body {
   width: 100%;
   margin: 0 auto;
 }
-.main-color{
-  color: var(--main-color)
+.main-color {
+  color: var(--main-color);
 }

@@ -4,10 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/base.css" />
-    <link rel="stylesheet" href="./css/general.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/queries.css" />
+    <!-- Font family -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="./imageS/logo-sm.png" />
+    <!-- Font awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
@@ -15,16 +19,89 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-	<!-- Ion Icons -->
-     <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
-     <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
-    <title>Document</title>
+
+    <!-- Linking External CSS files -->
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+    <!--Typed JS-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Ion Icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+
+	  <!-- Ion Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+
+    <title>Lambton Consultancy</title>
   </head>
 
   <body>
 
+    <!-- Header-->
+    <header class="header">
+      <div class="nav-header-container">
+        <div class="nav-header">
+          <!-- <a href="#" class="logo"> <span>Lambton</span> Consultancy </a> -->
+          <a href="#">
+            <img src="./images/logo-new.PNG" alt="logo" class="logo" />
+          </a>
+
+          <!-- Navigation -->
+          <nav class="navbar">
+            <ul class="menu">
+              <li>
+                <a href="./index.html" class="dropdown-link menu-link">Home</a>
+                <div class="dropdown-content">
+                  <a href="#services" class="sublink">Our Services</a>
+                  <a href="#counter" class="sublink">Our Experience</a>
+                  <a href="#testimonials" class="sublink">Testimonials</a>
+                </div>
+              </li>
+              <li>
+                <a href="./aboutus.html" class="menu-link">About us</a>
+              </li>
+            </ul>
+          </nav>
+
+          <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+          </button>
+          <!-- End of navigation -->
+        </div>
+        </div>
+
+        <!-- Hero -->
+        <div class="hero-box">
+          <div class="hero grid--no-column-gap">
+            <div class="hero-text-box">
+              <div class="hero-text1">Welcome To Lambton Consultancy</div>
+              <div class="hero-text2">We <span class="typed"></span></div>
+              <a
+                href="#programs"
+                class="btn btn--full btn--padding-lg margin-top--sm"
+                >Explore our work</a
+              >
+            </div>
+          </div>
+        </div>
+      <!-- End of Hero -->
+      </header>
+
+    <main>
+
   <!-- Services Start here -->
-  <section class="header padding-bottom-sm padding-top-sm">
+  <section class="services padding-bottom-sm padding-top-sm" id="services">
     <div class="servicesHeader">
       Services
     </div>
@@ -55,55 +132,56 @@
     </div>
   </section>
   <!-- Service Ends here -->
-    <!-- counter -->
-    <section class="counter_sec">
-      <div class="back_color">
-        <div class="grid grid--2-cols center">
-          <div class="counter-col">
-            <h2>
-              <span class="Count">1500</span>&nbsp;<i
-                class="fa fa-plus"
-                aria-hidden="true"
-              ></i>
-            </h2>
-            <p class="count_p">JOB OPPORTUNITIES</p>
-          </div>
+    
+  <!-- counter -->
+  <section class="counter_sec" id="counter">
+    <div class="back_color">
+      <div class="grid grid--2-cols center">
+        <div class="counter-col">
+          <h2>
+            <span class="Count">1500</span>&nbsp;<i
+              class="fa fa-plus"
+              aria-hidden="true"
+            ></i>
+          </h2>
+          <p class="count_p">JOB OPPORTUNITIES</p>
+        </div>
 
-          <div class="counter-col">
-            <h2>
-              <span class="Count">20</span>&nbsp;<i
-                class="fa fa-plus"
-                aria-hidden="true"
-              ></i>
-            </h2>
-            <p class="count_p">CLIENTS</p>
-          </div>
+        <div class="counter-col">
+          <h2>
+            <span class="Count">20</span>&nbsp;<i
+              class="fa fa-plus"
+              aria-hidden="true"
+            ></i>
+          </h2>
+          <p class="count_p">CLIENTS</p>
+        </div>
 
-          <div class="counter-col">
-            <h2>
-              <span class="Count">1200</span>&nbsp;<i
-                class="fa fa-plus"
-                aria-hidden="true"
-              ></i>
-            </h2>
-            <p class="count_p">
-              EMPLOYEES<span><br /></span>
-            </p>
-          </div>
+        <div class="counter-col">
+          <h2>
+            <span class="Count">1200</span>&nbsp;<i
+              class="fa fa-plus"
+              aria-hidden="true"
+            ></i>
+          </h2>
+          <p class="count_p">
+            EMPLOYEES<span><br /></span>
+          </p>
+        </div>
 
-          <div class="counter-col">
-            <h2>
-              <span class="Count">20</span>&nbsp;<i
-                class="fa fa-plus"
-                aria-hidden="true"
-              ></i>
-            </h2>
-            <p class="count_p">CONTRACT</p>
-          </div>
+        <div class="counter-col">
+          <h2>
+            <span class="Count">20</span>&nbsp;<i
+              class="fa fa-plus"
+              aria-hidden="true"
+            ></i>
+          </h2>
+          <p class="count_p">CONTRACT</p>
         </div>
       </div>
     </section>
     <!-- counter -->
+
     <!-- projects -->
     <section class="projects desktop">
       <h2 class="center pt-2 pb-2 main-color">Our Work</h2>
@@ -156,11 +234,12 @@
             architecto quos beatae aliquam deleniti totam illum nulla ipsam.
           </p>
         </div>
-      </div>
-      <h3 class="center pb-2">
-        <a href="" class="main-color">Explore Projects &nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-      </h3>
-    </section>
+        </div>
+        <h3 class="center pb-2">
+          <a href="#" class="main-color">Explore Projects &nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        </h3>
+      </section>
+      
     <!-- projects -->
     <!-- projects--mobile -->
     <section class="projects mobile">
@@ -231,12 +310,13 @@
         <span class="dot dot-projmySlides" onclick="currentSlide(3,'projmySlides')"></span>
         <span class="dot dot-projmySlides" onclick="currentSlide(4,'projmySlides')"></span>
       </div>
-      <h3 class="center pt-2 pb-2">
-        <a href="" class="main-color">Explore Projects&nbsp <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+      <h3 class="center">
+        <a href="#" class="main-color">Explore Projects&nbsp <i class="fa fa-angle-right" aria-hidden="true"></i></a>
       </h3>
     </section>
     <!-- projects--mobile -->
     <!-- testimonials -->
+    <div id="testimonials">
     <section class="testimonials desktop">
       <div class="grid grid--2-cols pt-4">
         <div class="card center margin-top--xl">
@@ -360,8 +440,9 @@
         <span class="dot dot-mySlides" onclick="currentSlide(4,'mySlides')"></span>
       </div>
     </section>
+    </div>
     <!-- testimonials--mobile -->
-	
+	</main>
 	
 		<!--	Footer section	-->
 		<footer class="footer">
@@ -385,7 +466,7 @@
                         </li>
                         <li>
                             <a class="footer-link" href="#">
-                                <ion-icon class="social-icon" name="logo-github"></ion-icon>
+                                <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
                             </a>
                         </li>
                         <li>
@@ -402,7 +483,9 @@
                     <button class="button"><span class="arrow right"></span></button>
                 </div>
             </div>
-        </footer>
+    </footer>
   </body>
   <script src="./js/scripts.js"></script>
+  <script src="./js/typed.js"></script>
+  <script src="./js/carousel.js"></script>
 </html>
