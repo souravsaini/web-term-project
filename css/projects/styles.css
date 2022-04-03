@@ -1,56 +1,75 @@
-.proj-container{
- padding: 2.5rem
+.proj {
+  padding: 9.6rem 0;
 }
 
 .proj-card {
- background-color: transparent;
- 
- height: 300px;
- perspective: 1000px;
+  background-color: transparent;
+
+  height: 32rem;
+  width: 30rem;
+  perspective: 100rem;
+  justify-self: center;
+  border-radius: 1rem;
 }
 
 .proj-card-inner {
- position: relative;
- width: 100%;
- height: 100%;
- text-align: center;
- transition: transform 0.6s;
- transform-style: preserve-3d;
- box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
 }
 
 .proj-card:hover .proj-card-inner {
- transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
-.proj-card-front, .proj-card-back {
- position: absolute;
- width: 100%;
- height: 100%;
- -webkit-backface-visibility: hidden;
- backface-visibility: hidden;
+.proj-card-front,
+.proj-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 1rem;
 }
 
 .proj-card-front {
- background-color: var(--secondary-color);
- 
- color:  var(--white);
+  background-color: var(--secondary-color);
 
- 
+  color: var(--white);
 }
-.proj-card-front p{
- 
- padding: 0 1rem;
- margin-bottom: 2rem;
+
+.proj-card-front img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.proj-card-front h3 {
+  padding: 1rem;
+}
+.proj-card-front p {
+  line-height: 1.5;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
 }
 
 .proj-card-back {
- background-color: var(--main-color-tint-2);
- /* color: white; */
- transform: rotateY(180deg);
- padding: 3.5rem 3.5rem;
+  background-color: var(--main-color-tint-2);
+  transform: rotateY(180deg);
+  padding: 3.5rem 3.5rem;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.wt-100{
-width: 100%
+
+.proj-card-back a:hover {
+  background: transparent;
+}
+.wt-100 {
+  width: 100%;
 }
