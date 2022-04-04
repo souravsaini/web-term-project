@@ -51,7 +51,6 @@
     <header class="header">
       <div class="nav-header-container">
         <div class="nav-header">
-          <!-- <a href="#" class="logo"> <span>Lambton</span> Consultancy </a> -->
           <a href="#">
             <img src="./images/logo-new.PNG" alt="logo" class="logo" />
           </a>
@@ -64,11 +63,20 @@
                 <div class="dropdown-content">
                   <a href="#services" class="sublink">Our Services</a>
                   <a href="#counter" class="sublink">Our Experience</a>
+                  <a href="#project" class="sublink">Our Work</a>
                   <a href="#testimonials" class="sublink">Testimonials</a>
                 </div>
               </li>
+
               <li>
-                <a href="./aboutus.html" class="menu-link">About us</a>
+                <a href="./aboutus.html" class="menu-link"
+                  >About us</a
+                >
+              </li>
+              <li>
+                <a href="./projects.html" class="menu-link"
+                >Projects</a
+              >
               </li>
               <li>
                 <a href="./contactus.html" class="menu-link">Contact us</a>
@@ -91,7 +99,7 @@
               <div class="hero-text1">Welcome To Lambton Consultancy</div>
               <div class="hero-text2">We <span class="typed"></span></div>
               <a
-                href="#programs"
+                href="#projects"
                 class="btn btn--full btn--padding-lg margin-top--sm"
                 >Explore our work</a
               >
@@ -186,137 +194,115 @@
     <!-- counter -->
 
     <!-- projects -->
-    <section class="projects desktop">
-      <h2 class="center pt-2 pb-2 main-color">Our Work</h2>
-      <div class="grid grid--2-cols">
-        <div class="card center">
-          <img class="proj_image" src="./images/grey.png" alt="projectimage" />
-          <p class="testi--text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis in, qui ratione ducimus voluptate veniam eaque itaque
-            dolorum placeat assumenda inventore architecto quos beatae aliquam
-            deleniti totam illum nulla ipsam.Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Perspiciatis in, qui ratione ducimus
-            voluptate veniam eaque itaque dolorum placeat assumenda inventore
-            architecto quos beatae aliquam deleniti totam illum nulla ipsam.
-          </p>
+    <div id="project">
+      <section class="projects desktop">
+        <h2 class="center pt-2 pb-2 main-color">Our Work</h2>
+        <div class="grid grid--2-cols">
+          <div class="card center">
+            <img class="proj_image" src="./images/projects/proj9.jpg" alt="projectimage" />
+            <h3 class="proj--title">AI Power</h3>
+             <p class="testi--text">
+              AI solution to provide data and figures to ensure that project
+                  gets delivered on time. We've created really cool gradients
+                  and icons which loves their clients.
+            </p>
+          </div>
+          <div class="card center">
+            <img class="proj_image" src="./images/projects/proj5.jpg" alt="projectimage" />
+            <h3 class="proj--title">Manage</h3>
+            <p class="testi--text">
+              This application has vibrant colors and really fantastic icons
+                  which attracts their clients and users and tempted them to
+                  understand more about their product.
+            </p>
+          </div>
+          <div class="card center">
+            <img class="proj_image" src="./images/projects/proj3.jpg" alt="projectimage" />
+            <h3 class="proj--title">Shortly</h3>
+            <p class="testi--text">
+              We designed and developed Shortly website for mobile, laptop
+                  and desktop versions. Really cool designs created by our
+                  awesome team of UI/UX.
+            </p>
+          </div>
+          <div class="card center">
+            <img class="proj_image" src="./images/projects/proj6.jpg" alt="projectimage" />
+            <h3 class="proj--title">Job Hunt</h3>
+            <p class="testi--text">
+              One click to apply for jobs. We've integrated with other
+                  popular job crawlers which provide recommendations to the
+                  premium subscribers. Isn't that cool ?
+            </p>
+          </div>
+          </div>
+          <h3 class="center pb-2">
+            <a href="./projects.html" class="main-color">Explore Projects &nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          </h3>
+        </section>
+        
+      <!-- projects -->
+      <!-- projects--mobile -->
+      <section class="projects mobile">
+          <h2 class="center pt-2 pb-2 main-color">Our Work</h2>
+        <div class="grid--sm slideshow-container ">
+          <!-- Full-width images with number and caption text -->
+          <div class="card projmySlides margin-top--sm center fade">
+            <img class="proj_image" src="./images/projects/proj9.jpg" alt="projectimage" />
+            <h3 class="proj--title">AI Power</h3>
+             <p class="testi--text">
+              AI solution to provide data and figures to ensure that project
+                  gets delivered on time. We've created really cool gradients
+                  and icons which loves their clients.
+            </p>
+          </div>
+
+          <div class="card projmySlides margin-top--sm center fade">
+            <img class="proj_image" src="./images/projects/proj5.jpg" alt="projectimage" />
+            <h3 class="proj--title">Manage</h3>
+            <p class="testi--text">
+              This application has vibrant colors and really fantastic icons
+                  which attracts their clients and users and tempted them to
+                  understand more about their product.
+            </p>
+          </div>
+
+          <div class="card projmySlides margin-top--sm center fade">
+            <img class="proj_image" src="./images/projects/proj3.jpg" alt="projectimage" />
+            <h3 class="proj--title">Shortly</h3>
+            <p class="testi--text">
+              We designed and developed Shortly website for mobile, laptop
+                  and desktop versions. Really cool designs created by our
+                  awesome team of UI/UX.
+            </p>   
+          </div>
+          <div class="card projmySlides margin-top--sm center fade">
+            <img class="proj_image" src="./images/projects/proj6.jpg" alt="projectimage" />
+            <h3 class="proj--title">Job Hunt</h3>
+            <p class="testi--text">
+              One click to apply for jobs. We've integrated with other
+                  popular job crawlers which provide recommendations to the
+                  premium subscribers. Isn't that cool ?
+            </p>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1,'projmySlides')">&#10094;</a>
+          <a class="next" onclick="plusSlides(1,'projmySlides')">&#10095;</a>
         </div>
-        <div class="card center">
-          <img class="proj_image" src="./images/grey.png" alt="projectimage" />
-          <p class="testi--text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis in, qui ratione ducimus voluptate veniam eaque itaque
-            dolorum placeat assumenda inventore architecto quos beatae aliquam
-            deleniti totam illum nulla ipsam.Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Perspiciatis in, qui ratione ducimus
-            voluptate veniam eaque itaque dolorum placeat assumenda inventore
-            architecto quos beatae aliquam deleniti totam illum nulla ipsam.
-          </p>
+        <br />
+
+        <!-- The dots/circles -->
+        <div style="text-align: center">
+          <span class="dot dot-projmySlides" onclick="currentSlide(1,'projmySlides')"></span>
+          <span class="dot dot-projmySlides" onclick="currentSlide(2,'projmySlides')"></span>
+          <span class="dot dot-projmySlides" onclick="currentSlide(3,'projmySlides')"></span>
+          <span class="dot dot-projmySlides" onclick="currentSlide(4,'projmySlides')"></span>
         </div>
-        <div class="card center">
-          <img class="proj_image" src="./images/grey.png" alt="projectimage" />
-          <p class="testi--text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis in, qui ratione ducimus voluptate veniam eaque itaque
-            dolorum placeat assumenda inventore architecto quos beatae aliquam
-            deleniti totam illum nulla ipsam.Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Perspiciatis in, qui ratione ducimus
-            voluptate veniam eaque itaque dolorum placeat assumenda inventore
-            architecto quos beatae aliquam deleniti totam illum nulla ipsam.
-          </p>
-        </div>
-        <div class="card center">
-          <img class="proj_image" src="./images/grey.png" alt="projectimage" />
-          <p class="testi--text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis in, qui ratione ducimus voluptate veniam eaque itaque
-            dolorum placeat assumenda inventore architecto quos beatae aliquam
-            deleniti totam illum nulla ipsam.Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Perspiciatis in, qui ratione ducimus
-            voluptate veniam eaque itaque dolorum placeat assumenda inventore
-            architecto quos beatae aliquam deleniti totam illum nulla ipsam.
-          </p>
-        </div>
-        </div>
-        <h3 class="center pb-2">
-          <a href="#" class="main-color">Explore Projects &nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        <h3 class="center margin-top--sm">
+          <a href="#" class="main-color">Explore Projects&nbsp <i class="fa fa-angle-right" aria-hidden="true"></i></a>
         </h3>
       </section>
-      
-    <!-- projects -->
-    <!-- projects--mobile -->
-    <section class="projects mobile">
-        <h2 class="center pt-2 pb-2 main-color">Our Work</h2>
-      <div class="grid--sm slideshow-container ">
-        <!-- Full-width images with number and caption text -->
-        <div class="card projmySlides margin-top--sm center fade">
-          <img class="proj_image" src="./images/grey.png" alt="projectimage" />
-          <p class="testi--text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis in, qui ratione ducimus voluptate veniam eaque itaque
-            dolorum placeat assumenda inventore architecto quos beatae aliquam
-            deleniti totam illum nulla ipsam.Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Perspiciatis in, qui ratione ducimus
-            voluptate veniam eaque itaque dolorum placeat assumenda inventore
-            architecto quos beatae aliquam deleniti totam illum nulla ipsam.
-          </p>
-        </div>
-
-        <div class="card projmySlides margin-top--sm center fade">
-          <img class="proj_image" src="./images/grey.png" alt="projectimage" />
-          <p class="testi--text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis in, qui ratione ducimus voluptate veniam eaque itaque
-            dolorum placeat assumenda inventore architecto quos beatae aliquam
-            deleniti totam illum nulla ipsam.Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Perspiciatis in, qui ratione ducimus
-            voluptate veniam eaque itaque dolorum placeat assumenda inventore
-            architecto quos beatae aliquam deleniti totam illum nulla ipsam.
-          </p>
-        </div>
-
-        <div class="card projmySlides margin-top--sm center fade">
-          <img class="proj_image" src="./images/grey.png" alt="projectimage" />
-          <p class="testi--text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis in, qui ratione ducimus voluptate veniam eaque itaque
-            dolorum placeat assumenda inventore architecto quos beatae aliquam
-            deleniti totam illum nulla ipsam.Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Perspiciatis in, qui ratione ducimus
-            voluptate veniam eaque itaque dolorum placeat assumenda inventore
-            architecto quos beatae aliquam deleniti totam illum nulla ipsam.
-          </p>
-        </div>
-        <div class="card projmySlides margin-top--sm center fade">
-          <img class="proj_image" src="./images/grey.png" alt="projectimage" />
-          <p class="testi--text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis in, qui ratione ducimus voluptate veniam eaque itaque
-            dolorum placeat assumenda inventore architecto quos beatae aliquam
-            deleniti totam illum nulla ipsam.Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Perspiciatis in, qui ratione ducimus
-            voluptate veniam eaque itaque dolorum placeat assumenda inventore
-            architecto quos beatae aliquam deleniti totam illum nulla ipsam.
-          </p>
-        </div>
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1,'projmySlides')">&#10094;</a>
-        <a class="next" onclick="plusSlides(1,'projmySlides')">&#10095;</a>
-      </div>
-      <br />
-
-      <!-- The dots/circles -->
-      <div style="text-align: center">
-        <span class="dot dot-projmySlides" onclick="currentSlide(1,'projmySlides')"></span>
-        <span class="dot dot-projmySlides" onclick="currentSlide(2,'projmySlides')"></span>
-        <span class="dot dot-projmySlides" onclick="currentSlide(3,'projmySlides')"></span>
-        <span class="dot dot-projmySlides" onclick="currentSlide(4,'projmySlides')"></span>
-      </div>
-      <h3 class="center">
-        <a href="#" class="main-color">Explore Projects&nbsp <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-      </h3>
-    </section>
+    </div>
     <!-- projects--mobile -->
     <!-- testimonials -->
     <div id="testimonials">
