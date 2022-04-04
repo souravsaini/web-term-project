@@ -1,0 +1,7 @@
+@media screen and (min-width: 1200px) {
+  .proj-card {
+    width: auto;
+    height: 27rem;
+    justify-self: normal;
+  }
+}

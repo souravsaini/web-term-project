@@ -283,6 +283,7 @@ p.count_p {
 .testi--text {
   padding: 1rem;
   text-align: justify;
+  line-height: 1.5;
 }
 
 .pt-4 {
@@ -321,10 +322,19 @@ p.count_p {
   text-align: center;
 }
 
+.projects {
+  padding: 5.6rem 0;
+}
+
 /* testimonials */
 /* projects */
 .proj_image {
-  width: 80%;
+  width: 100%;
+}
+
+.proj--title {
+  padding-top: 1rem;
+  color: var(--main-color-shade-1);
 }
 /* projects */
 

@@ -1,20 +1,21 @@
 let slideIndex = 1;
-showSlides(slideIndex);
+showSlides(slideIndex, "projmySlides");
+showSlides(slideIndex, "mySlides");
 
 // Next/previous controls
-function plusSlides(n) {
-  showSlides((slideIndex += n));
+function plusSlides(n, name) {
+  showSlides((slideIndex += n), name);
 }
 
 // Thumbnail image controls
-function currentSlide(n) {
-  showSlides((slideIndex = n));
+function currentSlide(n, name) {
+  showSlides((slideIndex = n), name);
 }
 
-function showSlides(n) {
+function showSlides(n, name) {
   let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
+  let slides = document.getElementsByClassName(name);
+  let dots = document.getElementsByClassName("dot" + "-" + name);
   if (n > slides.length) {
     slideIndex = 1;
   }
