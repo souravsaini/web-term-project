@@ -1,0 +1,65 @@
+.header-contactus {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+    ),
+    url("../../images/contact-us-banner-1.jpeg");
+}
+
+.contactus-main {
+    padding: 3rem;
+    border-left: 2px solid var(--main-color-shade-2);
+    border-right: 2px solid var(--main-color-shade-2);
+}
+
+.contactus-form {
+    text-align: center,
+    width: 100%;
+}
+
+.contactus-form table {
+    width: 100%
+}
+
+.contactus-form table tr .td-table {
+    width: 33%;
+    text-align: center
+}
+
+.contactus-form table tr .td-table{
+    font-size: 1.3rem;
+    color: var(--main-color)
+}
+
+.contactus-form table tr .meetus{
+    background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+        ),
+        url("../../images/meetus.jpeg");
+}
+
+.contactus-form table tr td input {
+    border: none;
+    padding: 0.5rem;
+}
+
+.contactus-form table tr .pitchus{
+    text-align: justify
+}
+
+.contactus-form table tr .pitchus .button{
+    padding: 1rem 2.5rem;
+    background-color: var(--main-color-shade-1);
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    color: var(--grey-dark);
+    font-family: "Rubik", sans-serif;
+}
+
+.contactus-form table tr .pitchus .button:hover {
+    box-shadow: 0px 0px 5px black
+}
