@@ -1,0 +1,63 @@
+/* rem and em do not work in media queries. So 1rem = 16px */
+
+@media (max-width: 60em) {
+  .cta {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .cta-text-title {
+    font-size: 3rem;
+  }
+
+  .cta-form {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .cta-input input,
+  .cta-input textarea,
+  .cta-btn button {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 33em) {
+  .cta-text-box {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 74em) {
+  .cta-text-box {
+    padding-top: 3.4rem;
+    padding-bottom: 3.4rem;
+  }
+
+  .cta-text-title {
+    font-size: 4rem;
+  }
+
+  .cta-text {
+    margin-bottom: 4rem;
+  }
+
+  .cta-input input {
+    height: 4rem;
+  }
+
+  .cta-input textarea {
+    resize: none;
+  }
+
+  .cta-input input,
+  .cta-input textarea {
+    border: 1px solid var(--grey-light);
+    outline: none;
+    border-radius: 0.6rem;
+    padding: 1rem 1.5rem;
+  }
+}

@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="./css/general.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/contactus/styles.css" />
+    <link rel="stylesheet" href="./css/contactus/queries.css" />
 
     <link rel="stylesheet" href="./css/queries.css" />
 
@@ -109,43 +110,67 @@
 <!-- End of Header -->
 
 <main>
-    <!-- Contact us section -->
-    <div class="container contactus-main">
-        <h3 class="title">Let's have a talk</h3>
+    <!-- CTA section -->
+    <section class="container contactus-main" id="cta">
 
-        <div class="contactus-form">
-            <table>
-                <tr>
-                    <td class="td-table font-size-sm">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.996831950527!2d-79.67671438477082!3d43.62742487912218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b409fb8a947f9%3A0x418640e93fdafd13!2sLambton%20College!5e0!3m2!1sen!2sca!4v1649041468660!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </td>
-                    <td class="td-table meetus font-size-sm">
-                        <h3 class="title">Meet us!</h3>
-                        <i class="fa-solid fa-phone padding-right-sm"></i> <span>+1 (519) 542-7751</span> <br><br>
-                        <i class="fa-solid fa-envelope padding-right-sm"></i> <span>info@lambtoncollege.ca</span> <br><br>
-                        <i class="fa-solid fa-map-marker padding-right-sm"></i> <span>121 Brunel Rd, Mississauga,<br> ON L4Z 3E9</span>
-                    </td>
-                    <td class="font-size-sm pitchus" style="padding: 15px">
-                        <h3 class="title">Pitch us!</h3>
-                        Hello,<br><br>
-                        <form>
-                        My name is <input type="text" required placeholder="Your name" /> and my e-mail is
-                        <input type="email" required placeholder="Your e-mail address" /> and I would like to discuss about
-                        <input type="text" required placeholder="This project" />.
-                        <br><br><br>
+            <div class="container-cta margin-top--lg">
+            <div class="cta">
+                <div class="cta-text-box">
+                    <h3 class="cta-text-title">Let's have a talk</h3>
+                    <p class="cta-text">
+                        We respond to the emails as soon as possible.
+                    </p>
 
-                        <input class="button" type="submit" name="Send" value="Send" />
-                        </form>
-                    </td>
-                </tr>
-            </table>
+                    <form class="cta-form" action="#">
+                        <div class="cta-input">
+                            <input
+                                    type="text"
+                                    placeholder="Name"
+                                    required
+                                    onkeypress="return textKeyPress(event)"
+                                    oninvalid="this.setCustomValidity('Please enter your name')"
+                                    oninput="this.setCustomValidity('')"
+                            />
+                        </div>
+                        <div class="cta-input">
+                            <input
+                                    type="email"
+                                    placeholder="Email"
+                                    required
+                                    oninvalid="this.setCustomValidity('Email not valid')"
+                                    oninput="this.setCustomValidity('')"
+                            />
+                        </div>
+                        <div class="cta-input">
+                            <textarea
+                                      cols="30"
+                                      rows="5"
+                                      placeholder="Describe your query"
+                                      required
+                                      oninvalid="this.setCustomValidity('Enter query details')"
+                                      oninput="this.setCustomValidity('')"
+                            ></textarea>
+                        </div>
+                        <div class="cta-btn">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="cta-img-box"></div>
             </div>
+
+            <iframe class="cta-iframe"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.996831950527!2d-79.67671438477082!3d43.62742487912218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b409fb8a947f9%3A0x418640e93fdafd13!2sLambton%20College!5e0!3m2!1sen!2sca!4v1649041468660!5m2!1sen!2sca"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
-
-    </div>
-
+    </section>
+    <!-- End of CTA section -->
 </main>
+
 <!--	Footer section	-->
 <footer class="footer">
     <div class="grid--2-cols content">
