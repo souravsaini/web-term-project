@@ -23,6 +23,8 @@
   --grey-light: #f2f2f2;
   --white: #fff;
   --black: #000;
+
+  --input-success: #65a765;
 }
 
 html {

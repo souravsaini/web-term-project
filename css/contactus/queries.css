@@ -1,37 +1,6 @@
 /* rem and em do not work in media queries. So 1rem = 16px */
 
-@media (max-width: 60em) {
-  .cta {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .cta-text-title {
-    font-size: 3rem;
-  }
-
-  .cta-form {
-    width: 85%;
-    margin: 0 auto;
-  }
-
-  .cta-input input,
-  .cta-input textarea,
-  .cta-btn button {
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 33em) {
-  .cta-text-box {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (max-width: 74em) {
+@media screen and (max-width: 74em) {
   .cta-text-box {
     padding-top: 3.4rem;
     padding-bottom: 3.4rem;
@@ -59,5 +28,44 @@
     outline: none;
     border-radius: 0.6rem;
     padding: 1rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 60em) {
+  .cta {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .cta-text-title {
+    font-size: 3rem;
+  }
+
+  .cta-form {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .cta-input input,
+  .cta-input textarea,
+  .cta-btn button {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 33em) {
+  .cta-text-box {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .cta-text-title {
+    font-size: 3rem;
+  }
+
+  .contactus-main {
+    padding: 3rem 1rem;
   }
 }
