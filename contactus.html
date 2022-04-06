@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font family -->
+    <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="./imageS/logo-sm.png" />
+    <!-- Font awesome -->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+            integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+    <!-- Linking External CSS files -->
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/contactus/styles.css" />
+    <link rel="stylesheet" href="./css/contactus/queries.css" />
+
+    <link rel="stylesheet" href="./css/queries.css" />
+
+    <!--Typed JS-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Font Awesome -->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+            integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+    <!-- Ion Icons -->
+    <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+            nomodule=""
+            src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <title>Lambton Consultancy</title>
+</head>
+
+<body>
+<!-- Header-->
+<header class="header header-contactus">
+    <div class="nav-header-container">
+        <div class="nav-header">
+            <a href="#">
+                <img src="./images/logo-new.PNG" alt="logo" class="logo" />
+            </a>
+
+            <!-- Navigation -->
+            <nav class="navbar">
+                <ul class="menu">
+                    <li>
+                        <a href="./index.html" class="menu-link">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="./aboutus.html" class="dropdown-link menu-link"
+                        >About us</a
+                        >
+                        <div class="dropdown-content">
+                            <a href="#team" class="sublink">Our Team</a>
+                            <a href="#choose" class="sublink">Choose Us</a>
+                            <a href="#quality" class="sublink">Qualities</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./projects.html" class="menu-link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="./contactus.html" class="menu-link">Contact us</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="btn-mobile-nav">
+                <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+                <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+            </button>
+            <!-- End of navigation -->
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero-box">
+        <div class="hero grid--no-column-gap">
+            <div class="hero-text-box hero-text-box--pages">
+                <div class="hero-text2">Home -></div>
+                <div class="hero-text2">
+                    <span>Contact Us</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Hero -->
+</header>
+<!-- End of Header -->
+
+<main>
+    <!-- CTA section -->
+    <section class="container contactus-main" id="cta">
+
+            <div class="container-cta margin-top--lg">
+            <div class="cta">
+                <div class="cta-text-box">
+                    <h3 class="cta-text-title">Let's have a talk</h3>
+                    <p class="cta-text">
+                        We respond to the emails as soon as possible.
+                    </p>
+
+                    <form class="cta-form" action="#">
+                        <div class="cta-input">
+                            <input
+                                    type="text"
+                                    placeholder="Name"
+                                    required
+                                    onkeypress="return textKeyPress(event)"
+                                    oninvalid="this.setCustomValidity('Please enter your name')"
+                                    oninput="this.setCustomValidity('')"
+                            />
+                        </div>
+                        <div class="cta-input">
+                            <input
+                                    type="email"
+                                    placeholder="Email"
+                                    required
+                                    oninvalid="this.setCustomValidity('Email not valid')"
+                                    oninput="this.setCustomValidity('')"
+                            />
+                        </div>
+                        <div class="cta-input">
+                            <textarea
+                                      cols="30"
+                                      rows="5"
+                                      placeholder="Describe your query"
+                                      required
+                                      oninvalid="this.setCustomValidity('Enter query details')"
+                                      oninput="this.setCustomValidity('')"
+                            ></textarea>
+                        </div>
+                        <div class="cta-btn">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="cta-img-box"></div>
+            </div>
+
+            <iframe class="cta-iframe"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.996831950527!2d-79.67671438477082!3d43.62742487912218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b409fb8a947f9%3A0x418640e93fdafd13!2sLambton%20College!5e0!3m2!1sen!2sca!4v1649041468660!5m2!1sen!2sca"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+    <!-- End of CTA section -->
+</main>
+
+<!--	Footer section	-->
+<footer class="footer">
+    <div class="grid--2-cols content">
+        <div>
+            <h6>IT Services</h6>
+            <ul>
+                <li><a href="#">Website</a></li>
+                <li><a href="#">Mobile App</a></li>
+                <li><a href="#">Database</a></li>
+                <li><a href="#">Web Service</a></li>
+            </ul>
+        </div>
+        <div class="centre-box">
+            <h6>Let's connect</h6>
+            <ul class="social-links">
+                <li>
+                    <a class="footer-link" href="#">
+                        <ion-icon class="social-icon" name="logo-linkedin"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a class="footer-link" href="#">
+                        <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a class="footer-link" href="#">
+                        <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h6>Newsletter</h6>
+            <p>Subscribe to stay updated</p>
+            <input
+                    class="form-control"
+                    name="EMAIL"
+                    placeholder="Enter Email "
+                    onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Enter Email '"
+                    required=""
+                    type="email"
+            />
+            <button class="button"><span class="arrow right"></span></button>
+        </div>
+    </div>
+</footer>
+
+
+<script src="./js/scripts.js"></script>
+</body>
+</html>

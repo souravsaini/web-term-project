@@ -1,0 +1,132 @@
+.header-contactus {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("../../images/cta/contact-us-banner-1.jpeg");
+}
+
+.contactus-main {
+  padding: 3rem;
+  border-left: 2px solid var(--main-color-shade-2);
+  border-right: 2px solid var(--main-color-shade-2);
+}
+
+.container-cta {
+  margin: 0 auto;
+}
+
+.section-cta {
+  padding: 9.6rem 0;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  background-image: linear-gradient(
+    90deg,
+    var(--main-color-tint-2),
+    var(--main-color-tint-1)
+  );
+  overflow: hidden;
+}
+
+.cta-text-box {
+  padding: 4.5rem 6.2rem 6.2rem 6.2rem;
+  color: var(--color-white);
+}
+
+.cta-text-title {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1.6rem;
+  color: var(--grey-white);
+  font-weight: 600;
+}
+
+.cta-text {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+  font-family: "Rubik", sans-serif;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(10, 0, 0, 0.7),
+      rgba(10, 0, 0, 0.7)
+    ),
+    url("../../images/cta/contactImage.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.cta-input input {
+  height: 3.5rem;
+}
+
+.cta-input textarea {
+  resize: none;
+}
+
+.cta-input input,
+.cta-input textarea {
+  width: 95%;
+  border: 1px solid var(--grey-light);
+  outline: none;
+  border-radius: 0.6rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  font-family: "Rubik", sans-serif;
+}
+
+.cta-input input:valid,
+.cta-input textarea:valid {
+  background: url("../../images/cta/check.jpg");
+  background-color: var(--white);
+  background-size: 2rem;
+  background-repeat: no-repeat;
+  background-position: right;
+  outline: 3px solid var(--input-success);
+}
+
+.cta-input input:invalid:not(:focus):not(:placeholder-shown),
+.cta-input textarea:invalid:not(:focus):not(:placeholder-shown) {
+  background-color: var(--main-color-contrast2);
+}
+
+.cta-btn button {
+  height: 4.5rem;
+  width: 95%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 9px;
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+  border: none;
+  background-color: var(--main-color);
+  color: var(--text-color-dark);
+  transition: all 0.3s;
+}
+
+.cta-btn button:hover {
+  color: var(--grey-dark);
+  box-shadow: 0.5px 0.5px 5px;
+}
+
+.container-cta .cta-iframe {
+  width: 100%;
+  height: 25rem;
+  box-shadow: 0.1px 0.1px 3px;
+  border-radius: 0.6rem;
+}
