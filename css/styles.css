@@ -126,7 +126,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 2rem;
+  /* gap: 2rem; */
   flex-direction: column;
 }
 

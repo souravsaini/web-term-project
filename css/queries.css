@@ -33,11 +33,6 @@
     flex-direction: row;
   }
 
-  /* .dropdown-link:hover + .dropdown-content,
-  .dropdown-link:active + .dropdown-content {
-    display: block;
-  } */
-
   .hero-text-box {
     width: inherit;
   }
@@ -48,7 +43,7 @@
 
   .menu-link:link,
   .menu-link:visited {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .footer .content {
