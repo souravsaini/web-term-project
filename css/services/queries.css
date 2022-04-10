@@ -1,0 +1,47 @@
+/* rem won't work in media queries. Instead use pixels or em (1em = 16px) */
+
+@media only screen and (min-width: 576px) {
+}
+
+@media screen and (min-width: 768px) {
+  /* .section-choose-us {
+    background: linear-gradient(
+      90deg,
+      var(--grey-dark) 35%,
+      var(--main-color-tint-1) 35%
+    );
+  }
+} */
+
+@media screen and (min-width: 992px) {
+  /* .grid {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  } */
+}
+
+@media screen and (min-width: 1200px) {
+  /* .team {
+    min-width: auto;
+    justify-self: normal;
+  } */
+  .grid {
+    grid-template-columns: 0.6fr 1fr;
+    column-gap: 2rem;
+  }
+
+
+  /* .quality-card {
+    width: 17rem;
+    height: 22rem;
+  }
+
+  .quality-icon i {
+    padding: 4rem;
+  }
+
+  .quality-description {
+    font-size: 1rem;
+  } */
+}
+}
