@@ -1,8 +1,7 @@
-
-  .grid {
-    grid-template-columns: repeat(1, 1fr);
-    row-gap: 2rem;
-  }
+.grid {
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 2rem;
+}
 
 .section-services {
   padding: 9.6rem 0;
@@ -11,8 +10,9 @@
   place-items: center;
 }
 
-.section-services .title {
-  margin-bottom: 4rem;;
+.section-services .title,
+.section-offer .title {
+  margin-bottom: 4rem;
 }
 
 .row {
@@ -90,9 +90,9 @@ p {
 }
 
 .offer-content h4 {
-    font-size: 2rem;
-    color: var(--text-color-dark);
-    margin: 1rem 2rem;
+  font-size: 2rem;
+  color: var(--text-color-dark);
+  margin: 1rem 2rem;
 }
 
 .offer-content p {
@@ -102,44 +102,45 @@ p {
 }
 
 .offer-list {
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding-left: 0;
-    list-style-type: none;
-    margin-bottom: 0;
-    margin-top: 16px;
-    margin-left: -10px;
-    margin-right: -10px;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 0;
+  list-style-type: none;
+  margin-bottom: 0;
+  margin-top: 16px;
+  margin-left: -10px;
+  margin-right: -10px;
+  flex-direction: column;
 }
 
 .offer-list li {
-    flex: 0 0 50%;
-    max-width: 50%;
-    margin-top: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
+  flex: 0 0 50%;
+  max-width: 100%;
+  margin-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .offer-list li span {
-    display: block;
-    background-color: #ffffff;
-    border-radius: 5px;
-    padding: 15px 15px;
-    z-index: 1;
-    position: relative;
-    transition: 0.4s;
-    color: var(--text-color-dark);
-    border-left: 2px solid var(--main-color-shade-2);
-    font-weight: 600;
-    font-size: 18px;
-    box-shadow: -1px 3px 20px 0px rgb(82 90 101 / 10%);
+  display: block;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 15px 15px;
+  z-index: 1;
+  position: relative;
+  transition: 0.4s;
+  color: var(--text-color-dark);
+  border-left: 2px solid var(--main-color-shade-2);
+  font-weight: 600;
+  font-size: 18px;
+  box-shadow: -1px 3px 20px 0px rgb(82 90 101 / 10%);
 }
 
 .offer-list li span::before {
-  content: '';
+  content: "";
   position: absolute;
-  left: 0;
+  left: -1px;
   bottom: 0;
   width: 0;
   height: 100%;
@@ -156,23 +157,4 @@ p {
 .offer-list li span:hover {
   background-position: 0 100%;
   color: var(--white);
-}
-
-@media screen and (min-width: 768px) {
-  section {
-    padding: 0 2em;
-  }
-  .column {
-    flex: 0 50%;
-    max-width: 50%;
-  }
-}
-@media screen and (min-width: 992px) {
-  section {
-    padding: 1em;
-  }
-  .column {
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
-  }
 }
