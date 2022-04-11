@@ -1,0 +1,36 @@
+/* rem won't work in media queries. Instead use pixels or em (1em = 16px) */
+@media screen and (min-width: 576px) {
+  .offer-list {
+    flex-direction: row;
+  }
+  .offer-list li {
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    padding: 0 2em;
+  }
+  .column {
+    flex: 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  section {
+    padding: 1em;
+  }
+  .column {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .grid {
+    grid-template-columns: 0.6fr 1fr;
+    column-gap: 2rem;
+  }
+}

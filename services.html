@@ -23,10 +23,10 @@
     <link rel="stylesheet" href="./css/base.css" />
     <link rel="stylesheet" href="./css/general.css" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/contactus/styles.css" />
-    <link rel="stylesheet" href="./css/contactus/queries.css" />
+    <link rel="stylesheet" href="./css/services/styles.css" />
 
     <link rel="stylesheet" href="./css/queries.css" />
+    <link rel="stylesheet" href="./css/services/queries.css" />
 
     <!--Typed JS-->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -53,9 +53,10 @@
 
   <body>
     <!-- Header-->
-    <header class="header header-contactus">
+    <header class="header header-aboutus">
       <div class="nav-header-container">
         <div class="nav-header">
+          <!-- <a href="#" class="logo"> <span>Lambton</span> Consultancy </a> -->
           <a href="#">
             <img src="./images/logo-new.PNG" alt="logo" class="logo" />
           </a>
@@ -66,17 +67,15 @@
               <li>
                 <a href="./index.html" class="menu-link">Home</a>
               </li>
-
               <li>
-                <a href="./aboutus.html" class="dropdown-link menu-link">About</a>
-                <div class="dropdown-content">
-                  <a href="#team" class="sublink">Our Team</a>
-                  <a href="#choose" class="sublink">Choose Us</a>
-                  <a href="#quality" class="sublink">Qualities</a>
-                </div>
+                <a href="./aboutus.html" class="menu-link">About</a>
               </li>
               <li>
-                <a href="./services.html" class="menu-link">Services</a>
+                <a href="./services.html" class="dropdown-link menu-link">Services</a>
+                <div class="dropdown-content">
+                  <a href="#services" class="sublink">Our Services</a>
+                  <a href="#offer" class="sublink">Offers</a>
+                </div>
               </li>
               <li>
                 <a href="./projects.html" class="menu-link">Projects</a>
@@ -104,7 +103,7 @@
           <div class="hero-text-box hero-text-box--pages">
             <div class="hero-text2">Home -></div>
             <div class="hero-text2">
-              <span>Contact Us</span>
+              <span>Services</span>
             </div>
           </div>
         </div>
@@ -114,68 +113,109 @@
     <!-- End of Header -->
 
     <main>
-      <!-- CTA section -->
-      <section class="container contactus-main" id="cta">
-        <div class="container-cta margin-top--lg">
-          <div class="cta">
-            <div class="cta-text-box">
-              <h3 class="cta-text-title">Let's have a talk</h3>
-              <p class="cta-text">
-                We respond to the emails as soon as possible.
+      <!-- Services section -->
+      <section class="section-services" id="services">
+        <div class="container">
+          <h3 class="title">Our Services</h3>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <div class="icon-wrapper">
+                <i class="fa-solid fa-desktop"></i>
+              </div>
+              <h3>Web</h3>
+              <p>
+                Professional UX/UI design and implementation of websites, web portals and other solutions.
               </p>
-
-              <form class="cta-form" action="#">
-                <div class="cta-input">
-                  <input
-                    type="text"
-                    placeholder="Name"
-                    required
-                    onkeypress="return textKeyPress(event)"
-                    oninvalid="this.setCustomValidity('Please enter your name')"
-                    oninput="this.setCustomValidity('')"
-                  />
-                </div>
-                <div class="cta-input">
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    required
-                    oninvalid="this.setCustomValidity('Email not valid')"
-                    oninput="this.setCustomValidity('')"
-                  />
-                </div>
-                <div class="cta-input">
-                  <textarea
-                    cols="30"
-                    rows="5"
-                    placeholder="Describe your query"
-                    required
-                    oninvalid="this.setCustomValidity('Enter query details')"
-                    oninput="this.setCustomValidity('')"
-                  ></textarea>
-                </div>
-                <div class="cta-btn">
-                  <button type="submit">Send message</button>
-                </div>
-              </form>
             </div>
-            <div class="cta-img-box"></div>
           </div>
-
-          <iframe
-            class="cta-iframe"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.996831950527!2d-79.67671438477082!3d43.62742487912218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b409fb8a947f9%3A0x418640e93fdafd13!2sLambton%20College!5e0!3m2!1sen!2sca!4v1649041468660!5m2!1sen!2sca"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          >
-          </iframe>
+          <div class="column">
+            <div class="card">
+              <div class="icon-wrapper">
+                <i class="fa-solid fa-mobile-screen"></i>
+              </div>
+              <h3>Mobile App</h3>
+              <p>
+                Full cycle of application design, integration and management services for iOS and Android.
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="icon-wrapper">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <h3>Database</h3>
+              <p>
+                Database development, design and modelling, and database administration services.
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="icon-wrapper">
+                <i class="fa-brands fa-mixcloud"></i>
+              </div>
+              <h3>Web Services</h3>
+              <p>
+                A wide range of services delivered on demand to provide easy, affordable access to applications and resources.
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="icon-wrapper">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+              <h3>Analytics</h3>
+              <p>
+                Our analytics services & solutions can help you review and visualize your data and unlock powerful insights.
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="icon-wrapper">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <h3>Security</h3>
+              <p>
+                We provide Information and Cyber Security Strategy & Design services to give you a better security posture.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
-      <!-- End of CTA section -->
-    </main>
+      <!-- End of services section -->
 
+      <!-- What we offer section -->
+      <section class="section-offer" id="offer">
+          <h3 class="title">What we offer</h3>
+        
+        <div class="container grid">
+            <div class="services-image">
+                <img src="images/services/services.PNG" alt="image"> 
+            </div>
+         
+            <div class="offer-content">
+              <h4>A range of exclusive Services &amp; Solutions</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <ul class="offer-list">
+                <li> <span>Architecture Redesign</span></li>
+                <li> <span>Software Modernisation</span></li>
+                <li> <span>Project Management</span></li>
+                <li> <span>Remote Tech Assistance</span></li>
+                <li> <span>Cloud Services</span></li>
+                <li> <span>Auditing &amp; Assurance</span></li>
+              </ul>
+            </div>
+        </div>
+      </section>
+      <!-- End of What we offer section -->
+
+    </main>
     <!--	Footer section	-->
     <footer class="footer">
       <div class="grid--2-cols content">
@@ -224,7 +264,6 @@
         </div>
       </div>
     </footer>
-
-    <script src="./js/scripts.js"></script>
   </body>
+  <script src="./js/scripts.js"></script>
 </html>
