@@ -15,6 +15,10 @@
     display: none;
   }
 
+  .nav-header {
+    flex-direction: column;
+  }
+
   .navbar {
     background-color: inherit;
     position: inherit;
@@ -31,6 +35,7 @@
 
   .menu {
     flex-direction: row;
+    gap: 0;
   }
 
   .hero-text-box {
@@ -46,6 +51,10 @@
     font-size: 1.6rem;
   }
 
+  .footer {
+    padding: 4rem 0 0 0;
+  }
+
   .footer .content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -58,9 +67,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  /* html {
-    font-size: 75%;
-  } */
   body {
     width: 90%;
   }
@@ -71,9 +77,6 @@
   .grid--2-cols {
     grid-template-columns: repeat(2, 1fr);
   }
-  /* .nav-header {
-    padding: 2.4rem;
-  } */
 
   /* CAROUSEL */
   .desktop {
@@ -86,6 +89,10 @@
 
   .nav-header-container {
     width: 90%;
+  }
+
+  .testi_name {
+    padding: 0 1rem 0 0;
   }
 }
 
@@ -104,6 +111,10 @@
   }
   .pt-4 {
     padding-top: 15rem;
+  }
+
+  .nav-header {
+    flex-direction: row;
   }
 
   .nav-header-container {
@@ -125,5 +136,11 @@
 
   .nav-header-container {
     width: 80%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .testimonials {
+    background-size: cover;
   }
 }

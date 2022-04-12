@@ -35,8 +35,21 @@ links.forEach((link) => {
     //scroll to section
     if (href !== "#" && href.startsWith("#")) {
       const element = document.querySelector(href);
-      console.log(element);
-      element.scrollIntoView({ behavior: "smooth" });
+      let headerOffset = 95;
+
+      var elementPosition = element.getBoundingClientRect().top;
+      if (window.innerWidth < 992 && window.innerWidth > 575) {
+        headerOffset = 118;
+      }
+      if (window.innerWidth <= 576) {
+        headerOffset = 82;
+      }
+      var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      // element.scrollIntoView({ behavior: "smooth" });
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
     }
 
     //close mobile nav
@@ -45,4 +58,3 @@ links.forEach((link) => {
     }
   });
 });
-
