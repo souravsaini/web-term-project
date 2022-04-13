@@ -4,7 +4,7 @@
 }
 
 .section-services {
-  padding: 9.6rem 0;
+  padding-top: 7.6rem;
   width: 100%;
   display: grid;
   place-items: center;
@@ -13,6 +13,10 @@
 .section-services .title,
 .section-offer .title {
   margin-bottom: 4rem;
+}
+
+.section-offer {
+  padding-top: 7.6rem;
 }
 
 .row {
@@ -28,7 +32,7 @@
   width: 100%;
   height: 100%;
   padding: 2em 1.5em;
-  background: linear-gradient(#ffffff 50%, var(--main-color) 50%);
+  background: linear-gradient(var(--white) 50%, var(--main-color) 50%);
   background-size: 100% 200%;
   background-position: 0 2.5%;
   border-radius: 5px;
@@ -39,11 +43,11 @@
 h3 {
   font-size: 20px;
   font-weight: 600;
-  color: #1f194c;
+  color: var(--text-color-dark-1);
   margin: 1em 0;
 }
 p {
-  color: #575a7b;
+  color: var(--text-color-light-1);
   font-size: 15px;
   line-height: 1.6;
   letter-spacing: 0.03em;
@@ -55,7 +59,7 @@ p {
   font-size: 30px;
   height: 2.5em;
   width: 2.5em;
-  color: #ffffff;
+  color: var(--white);
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -65,14 +69,14 @@ p {
   background-position: 0 100%;
 }
 .card:hover .icon-wrapper {
-  background-color: #ffffff;
-  color: #2c7bfe;
+  background-color: var(--white);
+  color: var(--main-color);
 }
 .card:hover h3 {
-  color: #ffffff;
+  color: var(--white);
 }
 .card:hover p {
-  color: #f0f0f0;
+  color: var(--grey-light-1);
 }
 
 /* ------------------ */
@@ -85,7 +89,7 @@ p {
   max-width: 100%;
 }
 
-.offer-content {
+.section-offer .offer-content {
   padding-bottom: 4rem;
 }
 
@@ -124,7 +128,7 @@ p {
 
 .offer-list li span {
   display: block;
-  background-color: #ffffff;
+  background-color: var(--white);
   border-radius: 5px;
   padding: 15px 15px;
   z-index: 1;

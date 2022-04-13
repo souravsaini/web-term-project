@@ -53,6 +53,7 @@
 }
 .proj-card-front p {
   line-height: 1.5;
+  font-size: 1.1rem;
   padding: 0 1rem;
   margin-bottom: 2rem;
 }
@@ -72,4 +73,7 @@
 }
 .wt-100 {
   width: 100%;
+}
+.ht-60 {
+  height: 60%;
 }

@@ -45,6 +45,11 @@
   margin-top: 10rem;
 }
 
+.margin-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .center {
   text-align: center;
 }
@@ -84,6 +89,7 @@
   font-weight: 600;
   border-radius: 9px;
   text-align: center;
+  max-width: 30rem;
 
   cursor: pointer;
   font-family: inherit;
@@ -221,9 +227,9 @@
 }
 
 .padding-right-sm {
-    padding-right: 2rem;
+  padding-right: 2rem;
 }
 
 .font-size-sm {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
