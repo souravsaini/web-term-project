@@ -1,6 +1,8 @@
 .careers-container {
   background-color: var(--main-color-tint-1);
   padding-bottom: 2rem;
+  border-left: 2px solid var(--main-color-shade-2);
+  border-right: 2px solid var(--main-color-shade-2);
 }
 
 .main__container {
